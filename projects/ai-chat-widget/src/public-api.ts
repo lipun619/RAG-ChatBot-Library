@@ -1,5 +1,5 @@
 /*
- * Public API Surface of @lipun/ai-chat-widget
+ * Public API Surface of @caplipun/ai-chat-widget
  */
 
 // Main component (primary public API)

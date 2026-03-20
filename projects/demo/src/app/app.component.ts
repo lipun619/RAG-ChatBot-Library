@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ChatWidgetComponent } from '@lipun/ai-chat-widget';
+import { ChatWidgetComponent } from '@caplipun/ai-chat-widget';
 
 @Component({
   selector: 'app-root',

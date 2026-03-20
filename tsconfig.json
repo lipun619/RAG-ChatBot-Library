@@ -7,7 +7,7 @@
       "ai-chat-widget": [
         "./projects/ai-chat-widget/src/public-api.ts"
       ],
-      "@lipun/ai-chat-widget": [
+      "@caplipun/ai-chat-widget": [
         "./projects/ai-chat-widget/src/public-api.ts"
       ]
     },

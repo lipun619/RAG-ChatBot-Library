@@ -1,6 +1,6 @@
 # RAG-ChatBot-Library
 
-An Angular workspace containing **`@lipun/ai-chat-widget`** — a floating AI chat bubble widget with a terminal-inspired dark theme — and a **demo application** to test it.
+An Angular workspace containing **`@caplipun/ai-chat-widget`** — a floating AI chat bubble widget with a terminal-inspired dark theme — and a **demo application** to test it.
 
 ## Workspace Structure
 
@@ -11,7 +11,7 @@ RAG-ChatBot-Library/
 ├── tsconfig.json             # Base TypeScript config
 ├── mock-server.js            # Mock API server for local testing
 ├── projects/
-│   ├── ai-chat-widget/       # 📦 The NPM library (@lipun/ai-chat-widget)
+│   ├── ai-chat-widget/       # 📦 The NPM library (@caplipun/ai-chat-widget)
 │   │   ├── src/
 │   │   │   ├── public-api.ts
 │   │   │   └── lib/
@@ -90,7 +90,7 @@ Responds to keywords about technologies, experience, and projects.
 
 ## Library Public API
 
-Exported from `@lipun/ai-chat-widget`:
+Exported from `@caplipun/ai-chat-widget`:
 
 | Export | Type | Description |
 |--------|------|-------------|

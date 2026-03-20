@@ -1,4 +1,4 @@
-# @lipun/ai-chat-widget
+# @caplipun/ai-chat-widget
 
 A floating AI chat bubble widget for Angular applications with a minimal, terminal-inspired dark theme.
 
@@ -23,7 +23,7 @@ A floating AI chat bubble widget for Angular applications with a minimal, termin
 ## Installation
 
 ```bash
-npm install @lipun/ai-chat-widget ngx-markdown marked prismjs
+npm install @caplipun/ai-chat-widget ngx-markdown marked prismjs
 ```
 
 ### Peer Dependencies
@@ -85,7 +85,7 @@ Add JetBrains Mono to your `index.html`:
 
 ```typescript
 import { Component } from '@angular/core';
-import { ChatWidgetComponent } from '@lipun/ai-chat-widget';
+import { ChatWidgetComponent } from '@caplipun/ai-chat-widget';
 
 @Component({
   selector: 'app-root',
