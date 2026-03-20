@@ -1,0 +1,43 @@
+<!-- Demo page content -->
+<div class="demo-page">
+  <div class="demo-container">
+    <h1 class="demo-name">Lipun Patel</h1>
+    <p class="demo-subtitle">Full-Stack Developer &bull; .NET &bull; Angular &bull; Python</p>
+
+    <div class="demo-card">
+      <h2 class="demo-card-title">About</h2>
+      <p class="demo-card-text">
+        I'm a passionate full-stack developer specializing in enterprise applications.
+        I work with .NET, Angular, SQL Server, and Python to build scalable solutions.
+      </p>
+    </div>
+
+    <div class="demo-card">
+      <h2 class="demo-card-title">Tech Stack</h2>
+      <div class="demo-tags">
+        @for (tech of technologies; track tech) {
+          <span class="demo-tag">{{ tech }}</span>
+        }
+      </div>
+    </div>
+
+    <div class="demo-card">
+      <h2 class="demo-card-title">AI Chat Widget Demo</h2>
+      <p class="demo-card-text">
+        Click the chat bubble in the bottom-right corner to interact with the AI assistant.
+        It uses the <code class="demo-code">&#64;lipun/ai-chat-widget</code> library.
+      </p>
+    </div>
+
+    <p class="demo-footer">&copy; 2026 Lipun Patel. All rights reserved.</p>
+  </div>
+</div>
+
+<!-- AI Chat Widget -->
+<ai-chat-widget
+  apiUrl="https://rag-chatbot-backend-920004489340.asia-south1.run.app/api/chat/sync"
+  title="Ask Lipun AI"
+  placeholder="Ask about my experience..."
+  welcomeMessage="Hello! I can answer questions about Lipun Patel's skills, experience, and projects."
+  [suggestedQuestions]="suggestedQuestions"
+/>

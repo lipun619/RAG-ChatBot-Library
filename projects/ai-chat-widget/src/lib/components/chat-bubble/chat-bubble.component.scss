@@ -1,0 +1,37 @@
+@use '../../styles/variables' as *;
+
+.ai-chat-bubble-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: $z-bubble;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: $bg-primary;
+  border: 1px solid $border-color;
+  color: $text-primary;
+  font-family: $font-mono;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all $transition-normal;
+
+  &:hover {
+    border-color: $text-primary;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  }
+
+  svg {
+    transition: transform $transition-normal;
+  }
+}

@@ -1,0 +1,29 @@
+@if (message(); as msg) {
+  @if (msg.role === 'ai') {
+    <!-- AI message -->
+    <div class="ai-chat-msg" @messageAnimation>
+      <div class="ai-msg-container">
+        <span class="ai-msg-label">&gt; assistant</span>
+        <div class="ai-msg-body">
+          @if (msg.content) {
+            <markdown [data]="msg.content" />
+          }
+          @if (msg.isStreaming) {
+            <span class="ai-msg-cursor--inline"></span>
+          }
+          @if (!msg.content && !msg.isStreaming) {
+            <span class="ai-msg-cursor"></span>
+          }
+        </div>
+      </div>
+    </div>
+  } @else {
+    <!-- User message -->
+    <div class="ai-chat-msg ai-chat-msg--user" @messageAnimation>
+      <div class="user-msg-container">
+        <span class="user-msg-label">&gt; you</span>
+        <p class="user-msg-text">{{ msg.content }}</p>
+      </div>
+    </div>
+  }
+}

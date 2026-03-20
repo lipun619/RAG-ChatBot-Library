@@ -1,0 +1,18 @@
+<!-- Floating bubble -->
+@if (!isOpen()) {
+  <ai-chat-bubble (toggle)="openChat()" />
+}
+
+<!-- Chat window -->
+@if (isOpen()) {
+  <ai-chat-window
+    [title]="title()"
+    [placeholder]="placeholder()"
+    [welcomeMessage]="welcomeMessage()"
+    [suggestedQuestions]="suggestedQuestions()"
+    [messages]="messages()"
+    [isLoading]="isLoading()"
+    (close)="closeChat()"
+    (messageSent)="onMessageSent($event)"
+  />
+}
