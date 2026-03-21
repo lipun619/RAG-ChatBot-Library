@@ -7,12 +7,13 @@
         <div class="ai-msg-body">
           @if (msg.content) {
             <markdown [data]="msg.content" />
-          }
-          @if (msg.isStreaming) {
-            <span class="ai-msg-cursor--inline"></span>
-          }
-          @if (!msg.content && !msg.isStreaming) {
-            <span class="ai-msg-cursor"></span>
+          } @else if (msg.isStreaming) {
+            <div class="ai-msg-thinking">
+              <span>thinking</span>
+              <span class="ai-msg-thinking-dots">
+                <span></span><span></span><span></span>
+              </span>
+            </div>
           }
         </div>
       </div>
