@@ -1,6 +1,6 @@
 {
   "name": "@caplipun/ai-chat-widget",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A floating AI chat bubble widget with a terminal-inspired theme for Angular applications",
   "license": "MIT",
   "keywords": [
